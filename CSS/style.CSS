@@ -8,12 +8,16 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 22px;
 }
-
-/* header */
-.header {
+.header,
+.main,
+footer {
     max-width: 100%;
     width: 1200px;
     margin: 0 auto;
+}
+
+/* header */
+.header {
     padding: 32px 0;
     display: flex;
     align-items: center;
@@ -41,14 +45,8 @@ body {
 }
 
 /* main */
-.main {
-    max-width: 100%;
-    width: 1200px;
-    margin: 0 auto;
-}
 .section-title {
     text-align: center;
-
 }
 .subtitle {
     font-family: Kaushan Script;
@@ -72,5 +70,5 @@ body {
     margin: 0 auto;
 }
 
-
+    /* Тут напысаты код з прошлого уроку */
     
