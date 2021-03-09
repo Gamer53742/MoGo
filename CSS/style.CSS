@@ -70,5 +70,47 @@ footer {
     margin: 0 auto;
 }
 
-    /* Тут напысаты код з прошлого уроку */
-    
+    /* service */
+    .service-item ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service-item ul li {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-start;
+    }.members {
+        display: flex;
+    }
+    .member-profile {
+        width: 33.33%;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .member-profile:last-child {
+        margin-right: 0;
+    }
+    .member-profile img {
+        width: 100%;
+    }
+
+    /* hover */
+    .member-photo {
+        position: relative;
+    }
+    .member-photo::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+        top: -10px;
+        bottom: 14px;
+        left: -10px;
+        right: 10px;
+        opacity: 0;
+        transition: .3s;
+    }
+    .member-photo:hover::before {
+        opacity: 1;
+    }
