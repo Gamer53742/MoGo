@@ -22,6 +22,7 @@ h2,h3 {
     text-transform: uppercase;
 }
 
+
 /* header */
 .header {
     padding: 32px 0;
@@ -31,9 +32,27 @@ h2,h3 {
     font-family: 'Montserrat', sans-serif;
     color: #95E1D3;
 }
+@media (max-width: 1200px) {
+    .header,
+    .main,
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 425px) {
+    .header {
+        justify-content: center;
+    }
+}
 .nav-menu {
     display: flex;
     list-style: none
+}
+@media (max-width: 425px) {
+    .nav-menu {
+        display: none;
+    }
 }
 .nav-menu li {
     margin-left: 55px;
@@ -93,6 +112,11 @@ h2,h3 {
         display: flex;
         align-items: flex-start;
     }
+    @media (max-width: 768px) {
+        .service-item ul li {
+            width: 50%;
+        }
+    }
     .service-item img {
         margin-right: 20px;
     }
@@ -109,6 +133,12 @@ h2,h3 {
     .team {
         margin-bottom: 80px;
     }
+    @media (max-width: 768px) {
+        .team {
+            margin-bottom: 20px;
+        }
+        
+    }
     .info {
         margin-top: 45px;
         margin-bottom: 30px;
@@ -122,6 +152,17 @@ h2,h3 {
         width: 33.33%;
         margin-right: 30px;
         text-align: center;
+    }
+    @media (max-width: 768px) {
+        .members {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .member-profile {
+            width: 50%;
+            margin-right: 0;
+            padding: 15px;
+        }
     }
     .member-profile:last-child {
         margin-right: 0;
@@ -202,12 +243,11 @@ h2,h3 {
     /* footer */
     footer {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         border-top: 1px solid #B6B6B6;
-        padding: 10px 0;
-        width: 1200px;
-        max-width: 100%;
-        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     input[type=text] {
         font-size: 14px;
@@ -224,8 +264,10 @@ h2,h3 {
         line-height: 17px;
         color: #FFFFFF;
         padding: 11px 38px;
-        position: absolute;
         border: 1px solid #95E1D3;
         border-radius: 0;
         background: #95E1D3;
+    }
+    form {
+        display: flex;
     }
